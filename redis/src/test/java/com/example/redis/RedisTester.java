@@ -15,8 +15,8 @@ public class RedisTester {
 
     @Test
     public void test() {
-        redisTemplate.opsForValue().set("key", "test");
-        Object key = redisTemplate.opsForValue().get("key");
+        redisTemplate.opsForValue().set("name", "zy");
+        Object key = redisTemplate.opsForValue().get("name");
         System.out.println(key);
     }
 
